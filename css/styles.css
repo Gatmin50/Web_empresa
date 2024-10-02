@@ -75,8 +75,8 @@ nav a:hover {
 
 iframe {
     width: 100%; /* Asegúrate de que el iframe use el 100% de su contenedor */
-    height: 600px; /* Altura fija */
-    border: none; /* Sin borde */
+    height: 900px; /* Altura fija */
+    border: 10px; /* Sin borde */
 }
 
 footer {
