@@ -1,19 +1,26 @@
 let index = 0;
+const slides = document.querySelectorAll('.slide');
 
 function showSlide(i) {
-    const slides = document.querySelectorAll('.slide');
-    if (i >= slides.length) { index = 0 }
-    if (i < 0) { index = slides.length - 1 }
+    if (i >= slides.length) { index = 0; }
+    if (i < 0) { index = slides.length - 1; }
     slides.forEach((slide, idx) => {
         slide.style.transform = `translateX(${-index * 100}%)`;
     });
 }
 
+function nextSlide() {
+    index++;
+    showSlide(index);
+}
+
 document.querySelectorAll('.carousel').forEach(carousel => {
     carousel.addEventListener('click', () => {
-        index++;
-        showSlide(index);
+        nextSlide();
     });
 });
+
+// Cambiar automáticamente cada 3 segundos
+setInterval(nextSlide, 3000);
 
 showSlide(index);

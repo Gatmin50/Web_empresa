@@ -9,10 +9,14 @@
     <!-- Scripts para Three.js y GLTFLoader -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <link rel="stylesheet" href="css/animaciones.css">
 </head>
 <body>
     <header>
         <h1>Nombre de la empresa</h1>
+        <div class="slogan">
+            <h4>Tu visión, nuestra proyección.</h4>
+        <div>
     </header>
     <nav>
         <a href="EscritorioLaser.html">Inicio</a>
@@ -22,19 +26,20 @@
     <div class="container">
         <h2>Bienvenidos a nuestra tienda</h2>
         <p>Descubre nuestros productos destacados y las mejores ofertas.</p>
-        <!-- Aquí irá el modelo 3D -->
-        <h3>Producto destacado en 3D</h3>
-        <h2>Carrusel de Imágenes</h2>
-        <div class="carousel">
+
+        <h3>Producto destacado</h3>
+        <div class="carousel"  id="carousel">
             <img src="imágenes/frontal.png" alt="Escritorio laser" class="slide">
-            <img src="imágenes/otra_imagen.png" alt="Otra imagen" class="slide">
-            <img src="imágenes/otra_imagen_mas.png" alt="Otra imagen más" class="slide">
+            <img src="imágenes/lateral_frontal.png" alt="Escritorio laser2" class="slide">
+            <img src="imágenes/lateral_posterior.png" alt="Escritorio laser3" class="slide">
         </div>       
     </div>
+
     <footer>
         <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
     </footer>
-    <script src="js/carousel.js"></script>
+
+    <script src="java_scripts/carusel.js"></script>
 </body>
 </html>
 
