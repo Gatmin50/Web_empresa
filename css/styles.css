@@ -42,16 +42,6 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#modelContainer {
-    width: 100%;
-    height: auto;
-}
-
-#modelContainer img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 .carousel {
     display: flex;
