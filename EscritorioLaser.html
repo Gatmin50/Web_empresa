@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio - Tienda Online</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS -->
-    
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Scripts para Three.js y GLTFLoader -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
@@ -15,73 +14,26 @@
     <header>
         <h1>Nombre de la empresa</h1>
     </header>
-
     <nav>
         <a href="EscritorioLaser.html">Inicio</a>
         <a href="productos.html">Productos</a>
         <a href="contacto.html">Contacto</a>
     </nav>
-
     <div class="container">
         <h2>Bienvenidos a nuestra tienda</h2>
         <p>Descubre nuestros productos destacados y las mejores ofertas.</p>
-
         <!-- Aquí irá el modelo 3D -->
         <h3>Producto destacado en 3D</h3>
-        <div id="modelContainer" style="width: 100%; height: 500px;"></div>
+        <div id="modelContainer">
+            <img src="imágenes/frontal.png" alt="Escritorio laser" class="product">
+            <img src="imágenes/lateral_frontal.png" alt="Otra imagen" class="slide">
+            <img src="imágenes/lateral_posterior.png" alt="Otra imagen más" class="slide">
+        </div>        
     </div>
-
     <footer>
         <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Script para cargar y renderizar el modelo 3D -->
-    <script>
-        // Crear la escena, la cámara y el renderizador
-        const scene = new THREE.Scene();
-        
-        // Asignar un fondo blanco a la escena
-        scene.background = new THREE.Color(0xffffff); // Fondo blanco
-    
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 500, 0.1, 300);
-        const renderer = new THREE.WebGLRenderer({ antialias: true });
-        
-        // Ajustar el tamaño del renderizador y evitar el desbordamiento
-        renderer.setSize(window.innerWidth * 0.9, 400); // Establece el tamaño del canvas dinámicamente
-        document.getElementById('modelContainer').appendChild(renderer.domElement);
-    
-        // Añadir luz ambiental
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
-        scene.add(ambientLight);
-    
-        // Cargar el modelo 3D
-        const loader = new THREE.GLTFLoader();
-        loader.load('imágenes/EsLaF.glb', function(gltf) {
-            const model = gltf.scene;
-            scene.add(model);
-    
-            camera.position.z = 2;
-    
-            // Animar el modelo para que rote
-            function animate() {
-                requestAnimationFrame(animate);
-                model.rotation.y += 0; // Rotar el modelo lentamente
-                renderer.render(scene, camera);
-            }
-            animate();
-        }, undefined, function(error) {
-            console.error('Error al cargar el modelo', error);
-        });
-    
-        // Ajustar el tamaño del renderizador cuando la ventana se redimensione
-        window.addEventListener('resize', function() {
-            const width = 700; // Ajusta el ancho al 90% de la ventana
-            const height = 400; // Mantener el alto fijo
-            renderer.setSize(width, height);
-            camera.aspect = width / height;
-            camera.updateProjectionMatrix();
-        });
-    </script>    
 </body>
 </html>
+
 

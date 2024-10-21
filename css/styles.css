@@ -42,9 +42,35 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+#modelContainer {
+    width: 100%;
+    height: auto;
+}
+
+#modelContainer img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
 
 .product img {
-    max-width: 400px;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
