@@ -154,6 +154,15 @@ nav a:hover {
     margin-right: 20px;
 }
 
+.lamina {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centra la imagen con margen */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .product-info {
     flex: 1 1 55%;
     padding: 20px;
