@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon --> 
+    <!-- Favicon -->
     <link rel="icon" href="imágenes/Logo1.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Productos - Tienda Online</title>
@@ -12,8 +12,8 @@
 </head>
 <body>
     <header>
-        <div class="logo-container"> 
-            <img src="imágenes/logo.png" alt="Logotipo de la Empresa" class="logo"> 
+        <div class="logo-container">
+            <img src="imágenes/logo.png" alt="Logotipo de la Empresa" class="logo">
         </div>
         <img src="imágenes/foto_header.jpg" alt="Encabezado" class="header-image">
         <div class="header-content">
@@ -34,8 +34,41 @@
             <img src="imágenes/frontal.png" alt="Escritorio laser">
             <div class="product-info">
                 <h1>Escritorio laser</h1>
-                <p>Descripción detallada del producto.</p>
-                <p class="price">979,90€</p>
+                <p>Escritorio con rail y brazo, con camara integrada y sistema de laseres. 
+                    <br> Especificaciones: <br><br>
+                    &emsp;&emsp;&emsp; · Camara optica<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Camara qeu se encarga de detectar la posición de las manos en todo momento <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - ISO medio de 1600 <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Lente de 50mm f/1.4 <br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Resolución 4K <br><br>
+                    &emsp;&emsp;&emsp; · Sistema de laseres<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Sistema encargado de proyectar el teclado encima del escritorio<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Laser Rojo<br><br>
+                    &emsp;&emsp;&emsp; · Materiales<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Plancha de madera de abeto<br>
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; - Patas, Riel y brazo de aluminio<br><br>
+                </p>
+                <p class="price" id="price"> 979,90€ </p>
+                <form id="customization-form" class="customization-form">
+                    <label class="customization-option">
+                        <input type="checkbox" name="extra-drawer" value="50"> Añadir cajón (+50€)
+                    </label><br>
+                    <label class="customization-option">
+                        <input type="checkbox" name="integrated-lighting" value="75"> Añadir iluminación LED integrada (+75€)
+                    </label><br>
+                    <label class="customization-option">
+                        <input type="checkbox" name="better-camera" value="60"> Cambio a lente gran angular 24-70mm f/2.8 (+60€)
+                    </label><br>
+                    <label class="customization-option">
+                        <input type="checkbox" name="laser-RGB" value="40"> Añadir RGB al laser (+40€)
+                    </label><br>
+                    <label class="customization-option">
+                        <input type="checkbox" name="pantalla-extra" value="100"> Mejorar sistema de laseres para proyectar una pantalla (+100€)
+                    </label><br>
+                    <label class="customization-option">
+                        <input type="checkbox" name="pantalla-extra" value="160"> Cambiar la madera de abeto a acacia (+160€)
+                    </label><br>
+                </form>
                 <button class="add-to-cart">Añadir al carrito</button>
             </div>
         </div>
@@ -43,4 +76,6 @@
     <footer>
         <p>&copy; 2024 Tienda Online. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/ajuste_precio.js"></script>
 </body>
+</html>

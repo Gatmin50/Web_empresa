@@ -28,6 +28,7 @@ header {
 .header-image {
     width: 100%;
     height: 200px;
+    object-fit: cover;
     position: relative;  /* Asegura que otros elementos puedan superponerse */
 }
 
@@ -212,6 +213,23 @@ nav a:hover {
 .add-to-cart:hover {
     background-color: #4d4d4d; /* Gris oscuro en hover */
     border-color: #4d4d4d; /* Bordes gris oscuro en hover */
+}
+
+.customization-form { 
+    margin: 20px 0; 
+} 
+
+.customization-option { 
+    display: 
+    block; 
+    margin: 10px 0; 
+    font-size: 1.2em; 
+    color: white; 
+} 
+
+.customization-option input { 
+    margin-right: 10px; 
+    transform: scale(1.2); 
 }
 
 
