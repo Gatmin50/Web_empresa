@@ -5,27 +5,42 @@ body {
     background-color: #121212; /* Fondo oscuro */
 }
 
+
 header {
     position: relative;
     text-align: center;
     color: white;
 }
 
+.logo-container {
+    position: absolute;  /* Para que el logotipo esté en la parte superior */
+    top: 10px;           /* Ajusta la distancia desde la parte superior */
+    left: 10px;          /* Ajusta la distancia desde la parte izquierda */
+    z-index: 10;
+}
+
+.logo {
+    width: 50px;         /* Ajusta el tamaño según sea necesario */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    margin-right: 20px;  /* Espacio entre el logo y la siguiente sección */
+}
+
 .header-image {
     width: 100%;
     height: 200px;
-    object-fit: cover;
-    opacity: 0.8;
+    position: relative;  /* Asegura que otros elementos puedan superponerse */
 }
 
 .header-content {
-    position: absolute;
+    position: absolute;  /* Asegura que otros elementos dentro del header se posicionen correctamente */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
 }
+
+
 
 header h1 {
     font-size: 3rem;
@@ -51,6 +66,14 @@ header h1 {
         font-size: 1rem;
     }
 }
+
+.logo {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 20px; /* Espacio entre el logo y la siguiente sección */
+    float: left; /* Alinea el logotipo a la izquierda */
+}
+
 
 nav {
     background-color: #1e1e1e; /* Azul oscuro */
