@@ -232,6 +232,11 @@ nav a:hover {
     transform: scale(1.2); 
 }
 
+.update {
+    width: 100px;         /* Ajusta el tamaño según sea necesario */
+    height: auto;        /* Mantiene la proporción de la imagen */
+    margin: right 40px;  /* Espacio entre el logo y la siguiente sección */
+}
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 600px) {
