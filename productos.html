@@ -12,12 +12,15 @@
 </head>
 <body>
     <header>
-        <div class="logo-container">
-            <img src="imágenes/logo.png" alt="Logotipo de la Empresa" class="logo">
+        <div class="logo-container"> 
+            <img src="imágenes/logo.png" alt="Logotipo de la Empresa" class="logo"> 
         </div>
         <img src="imágenes/foto_header.jpg" alt="Encabezado" class="header-image">
         <div class="header-content">
             <h1>PROYECTA+</h1>
+            <div class="slogan">
+                <h4>Tu visión, nuestra proyección.</h4>
+            </div>
         </div>
     </header>
     <nav>
@@ -26,6 +29,10 @@
         <span class="ci--shopping-bag-01"></span>
         <a href="productos.html">Productos</a>
         <span class="ci--paper-plane"></span>
+        <a href="Sobre_nostros.html">Sobre nosotros</a>
+        <span class="uil--comment-alt-edit"></span>
+        <a href="reseñas.html">Reseñas</a>
+        <span class="uil--chat-bubble-user"></span>
         <a href="contacto.html">Contacto</a>
     </nav>
     <div class="container">
@@ -51,25 +58,33 @@
                 <form id="customization-form" class="customization-form">
                     <label class="customization-option">
                         <input type="checkbox" name="extra-drawer" value="50"> Añadir cajón (+50€)
-                        <img src="imágenes/Cajon.png" class="update">
+                        <div class="image-text-container">
+                            <img src="imágenes/Cajon.png" class="update">
+                        </div>
                     </label><br>
                     <label class="customization-option">
                         <input type="checkbox" name="integrated-lighting" value="75"> Añadir iluminación LED integrada (+75€)
                     </label><br>
                     <label class="customization-option">
                         <input type="checkbox" name="better-camera" value="60"> Cambio a lente gran angular 24-70mm f/2.8 (+60€)
-                        <img src="imágenes/gran angular.png" class="update">
+                        <div class="image-text-container">
+                            <img src="imágenes/gran angular.png" class="update">
+                        </div>
                     </label><br>
                     <label class="customization-option">
                         <input type="checkbox" name="laser-RGB" value="40"> Añadir RGB al laser (+40€)
-                        <img src="imágenes/laseres.png" class="update">
+                        <div class="image-text-container">
+                            <img src="imágenes/laseres.png" class="update">
+                        </div>
                     </label><br>
                     <label class="customization-option">
                         <input type="checkbox" name="pantalla-extra" value="100"> Mejorar sistema de laseres para proyectar una pantalla (+100€)
                     </label><br>
                     <label class="customization-option">
                         <input type="checkbox" name="pantalla-extra" value="160"> Cambiar la madera de abeto a acacia (+160€)
-                        <img src="imágenes/acacia.png" class="update">
+                        <div class="image-text-container">
+                            <img src="imágenes/acacia.png" class="update">
+                        </div>
                     </label><br>
                 </form>
                 <p class="price" id="price"> 979,90€ </p>
