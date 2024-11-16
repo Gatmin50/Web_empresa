@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function updatePrice() {
-    let basePrice = 979.90;
+    let basePrice = 200.00;
     const checkboxes = document.querySelectorAll('#customization-form input[type="checkbox"]');
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
