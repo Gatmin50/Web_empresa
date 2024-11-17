@@ -43,4 +43,28 @@ function addReview() {
     } else {
         alert('Por favor, completa todos los campos para enviar tu reseña.');
     }
+
+    function getRandomProfileImage() {
+        // Genera un número aleatorio entre 1 y 4 para seleccionar la imagen de perfil
+        const randomIndex = Math.floor(Math.random() * 4) + 1;
+        return `imágenes/perfil${randomIndex}.png`;
+    }
+    
+    function addProfileImagesToReviews() {
+        const reviews = document.querySelectorAll('.review');
+        
+        reviews.forEach(review => {
+            const profileImage = document.createElement('img');
+            profileImage.src = getRandomProfileImage();
+            profileImage.alt = 'Imagen de perfil';
+            profileImage.classList.add('profile-image');
+            
+            // Inserta la imagen de perfil antes del nombre de usuario en la reseña
+            review.insertBefore(profileImage, review.firstChild);
+        });
+    }
+    
+    // Llama a la función para agregar imágenes de perfil a las reseñas ya cargadas
+    document.addEventListener('DOMContentLoaded', addProfileImagesToReviews);
+    
 }
